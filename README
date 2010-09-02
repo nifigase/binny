@@ -1,0 +1,5 @@
+Binny is an efficient binary data parsing tool.
+Can be used for parsing binary protocols, validating constants in binary message.
+Inspired by Erlang's syntax for unpacking binary data.
+For examples see src/test.cpp
+

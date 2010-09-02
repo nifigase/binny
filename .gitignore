@@ -1,0 +1,5 @@
+binny_test
+*.o
+*.dblite
+Debug
+Debug0x
