@@ -287,8 +287,19 @@ struct holder_traits <nonconst_data<ValueT> > {
 };
 
 /**
- * Terminal tree node.
- * We must keep holders by value, cause nonconst methods may be called on them
+ * Pair of holders. Holders compose a tree:
+ * bin_holder_sequence
+ *   |             |
+ *   |			BinHolder2
+ *   |
+ * bin_holder_sequence
+ *   |             |
+ *   |			BinHolder2
+ *   |
+ * ...
+ * bin_holder_sequence
+ *   |             |
+ * BinHolder1	BinHolder2
  */
 template<typename BinHolder1, typename BinHolder2>
 class bin_holder_sequence {
